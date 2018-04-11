@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fb_field_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="90"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fb_field_diagram" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CCFAFAFA" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Fantasy Football Trivia"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz_note"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <!--Horizontal divider before Question One-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--QUESTION ONE-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Question 1"
+                android:textAllCaps="true"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/question_one"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q1_nick_foles_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="24dp"
+                android:text="Nick Foles"
+                android:textColor="@color/colorAnswer"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q1_jeff_garcia_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="24dp"
+                android:text="Jeff Garcia"
+                android:textColor="@color/colorAnswer"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q1_russell_wilson_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="24dp"
+                android:text="Russell Wilson"
+                android:textColor="@color/colorAnswer"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q1_aaron_rodgers_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="24dp"
+                android:text="Aaron Rodgers"
+                android:textColor="@color/colorAnswer"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q1_tom_brady_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="24dp"
+                android:text="Tom Brady"
+                android:textColor="@color/colorAnswer"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/q1_tony_romo_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="24dp"
+                android:text="Tony Romo"
+                android:textColor="@color/colorAnswer"
+                android:textSize="16sp" />
+
+            <!--Horizontal divider before Question Two-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--QUESTION TWO-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Question 2"
+                android:textAllCaps="true"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/question_two"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/question_two_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q2_drew_brees_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Drew Brees"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q2_peyton_manning_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Peyton Manning"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q2_aaron_rodgers_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Aaron Rodgers"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q2_tom_brady_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Tom Brady"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q2_dan_marino_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Dan Marino"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <!--Horizontal divider before Question Three-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--QUESTION THREE-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Question 3"
+                android:textAllCaps="true"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/question_three"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/question_three_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="First Last"
+                android:inputType="textCapWords" />
+
+            <!--Horizontal divider before Question Four-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--QUESTION FOUR-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Question 4"
+                android:textAllCaps="true"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/question_four"
+                android:textColor="@color/colorQuestion"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/question_four_radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/q4_ladainian_tomlinson_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="LaDainian Tomlinson"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q4_marshall_faulk_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Marshall Faulk"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q4_priest_holmes_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Priest Holmes"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q4_shaun_alexander_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Shaun Alexander"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/q4_emmitt_smith_radiobox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:text="Emmitt Smith"
+                    android:textColor="@color/colorAnswer"
+                    android:textSize="16sp" />
+
+            </RadioGroup>
+
+            <!--Horizontal divider before submit button-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--Nested linear layout for submit and reset buttons-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--SUBMIT BUTTON-->
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="submitAnswers"
+                    android:text="Submit"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <!--RESET BUTTON-->
+                <Button
+                    android:id="@+id/reset_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="resetAnswers"
+                    android:text="Reset"
+                    android:textAllCaps="true"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <!--Horizontal divider before score message-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--Score message-->
+            <TextView
+                android:id="@+id/score_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
