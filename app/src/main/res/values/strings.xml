@@ -1,25 +1,42 @@
 <resources>
     <string name="app_name">Fantasy Football Trivia</string>
 
+    <string name="title">Fantasy Football Trivia</string>
+
     <!--Quiz Note-->
     <string name="quiz_note">Note: Standard Scoring and PPR Scoring Formats are based on those
         used at Pro-Football-Reference.Com</string>
 
     <!--Question 1-->
+    <string name="question_one_heading">Question 1</string>
+
     <string name="question_one">For the period from 2000 through 2017, which of these
         quarterbacks does NOT have a Top 10 score for the most fantasy points in a single regular
         season game (standard scoring; check all that apply)?</string>
 
     <!--Question 2-->
+    <string name="question_two_heading">Question 2</string>
+
     <string name="question_two">Which of these quarterbacks has scored the most fantasy points in
         one regular season (standard scoring)?</string>
 
     <!--Question 3-->
+    <string name="question_three_heading">Question 3</string>
+
     <string name="question_three">Who is the Denver running back who scored 5 rushing touchdowns
         on his way to the most fantasy points ever scored in a single game in standard scoring?</string>
 
+    <string name="question_three_hint">First Last</string>
+
     <!--Question 4-->
+    <string name="question_four_heading">Question 4</string>
+
     <string name="question_four">Which player holds the record for the most fantansy points
     scored in a single season (both standard and PPR scoring)?</string>
+
+    <!--Submit and Reset Buttons Text-->
+    <string name="submit_button">Submit</string>
+
+    <string name="reset_button">Reset</string>
 
 </resources>

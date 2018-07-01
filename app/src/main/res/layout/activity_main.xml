@@ -38,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
-                android:text="Fantasy Football Trivia"
+                android:text="@string/title"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
                 android:textSize="16sp" />
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Question 1"
+                android:text="@string/question_one_heading"
                 android:textAllCaps="true"
                 android:textColor="@color/colorQuestion"
                 android:textSize="16sp" />
@@ -153,7 +153,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Question 2"
+                android:text="@string/question_two_heading"
                 android:textAllCaps="true"
                 android:textColor="@color/colorQuestion"
                 android:textSize="16sp" />
@@ -238,7 +238,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Question 3"
+                android:text="@string/question_three_heading"
                 android:textAllCaps="true"
                 android:textColor="@color/colorQuestion"
                 android:textSize="16sp" />
@@ -256,7 +256,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="First Last"
+                android:hint="@string/question_three_hint"
                 android:inputType="textCapWords" />
 
             <!--Horizontal divider before Question Four-->
@@ -274,7 +274,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Question 4"
+                android:text="@string/question_four_heading"
                 android:textAllCaps="true"
                 android:textColor="@color/colorQuestion"
                 android:textSize="16sp" />
@@ -366,7 +366,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="submitAnswers"
-                    android:text="Submit"
+                    android:text="@string/submit_button"
                     android:textAllCaps="true"
                     android:textColor="#000000"
                     android:textSize="16sp" />
@@ -378,7 +378,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:onClick="resetAnswers"
-                    android:text="Reset"
+                    android:text="@string/reset_button"
                     android:textAllCaps="true"
                     android:textColor="#000000"
                     android:textSize="16sp" />
