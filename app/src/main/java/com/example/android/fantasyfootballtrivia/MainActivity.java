@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
             questionScore = 1;
         }
         return questionScore;
-
     }
 
     /*Checks the answer for question 4 and returns a score of 1 if the answer is correct*/
